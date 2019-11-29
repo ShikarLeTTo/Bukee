@@ -85,12 +85,15 @@ body {
     &__name {
         font-family: 'Open Sans', serif;
         font-size: 18px;
-        letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        letter-spacing: 0.85px;
+        margin-bottom: 43px;
+        margin-left: 4px;
+        margin-top: 1px;
     }
     &__name_top {
         margin-top: 16px;
         margin-left: 0;
+        margin-bottom: 19px;
     }
     &__title {
         font-size: 48px;
@@ -101,8 +104,9 @@ body {
             display: block;
             color: $accent-color;
             font-size: 18px;
-            margin-top: 12px;
+            margin-top: 23px;
             letter-spacing: 0.9px;
+            margin-left: 3px;
         }
     }
     &__description {
@@ -128,7 +132,6 @@ body {
     }
     small {
         font-family: 'Open Sans', sans-serif;
-        // font-style: italic;
         font-size: 12px;
         letter-spacing: 0.2px;
     }
@@ -139,11 +142,38 @@ body {
     justify-content: flex-start;
     &-demo {
         display: block;
+        position: relative;
         width: 445px;
         height: 643px;
         background-image: url(../img/book.svg);
         background-repeat: no-repeat;
         flex-basis: 445px;
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            position: absolute;
+            left: 131px;
+            top: 118px;
+            span {
+                font-family: 'Open Sans', serif;
+                font-size: 14px;
+                color: $accent-color;
+                display: block;
+                text-transform: initial;
+                margin-top: 10px;
+                letter-spacing: 0.7px;
+            }
+        }
+        &__author {
+            font-family: 'Open Sans', serif;
+            font-size: 14px;
+            color: $accent-color;
+            letter-spacing: 0.7px;
+            position: absolute;
+            bottom: 52px;
+            left: 87px;
+        }
     }
 }
 .page {
