@@ -572,3 +572,59 @@ body {
         }
     }
 }
+.footer {
+    background-color: $bg-dark-color;
+    color: $gray-color;
+    padding: 160px 0;
+}
+.block-footer {
+    display: flex;
+    &>div {
+        flex-basis: 34%;
+        justify-content: space-between;
+    }
+    p {
+        font-family: 'Open Sans', serif;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-top: 26px;
+    }
+    
+    &__logo {
+        display: block;
+        width: 137px;
+        height: 28px;
+        background-image: url(../img/Logo-footer.svg);
+    }
+    &__title {
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        color: $accent-color;
+        text-transform: uppercase;
+        margin-top: 8px;
+        margin-bottom: 21px;
+
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        
+        &>li {
+            font-family: 'Open Sans', serif;
+            font-size: 15px;
+            letter-spacing: 0.6px;
+            margin-bottom: 4px;
+        }
+    }
+    &__social {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        &>li {
+            margin-right: 13px;
+            &>a {
+                color: $accent-color;
+            }
+        }
+    }
+}
