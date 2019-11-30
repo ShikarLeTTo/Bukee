@@ -10,6 +10,7 @@ $light-color: #fff;
 $accent-color: #65e496;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
+$gray-color: #9191b5;
 
 h1, h2, h3, h4, p {
     padding: 0;
@@ -252,7 +253,7 @@ body {
         border-radius: 3px;
         text-align: center;
         font-size: 18px;
-        scroll-margin-top: 28px;
+        margin-top: 28px;
         padding: 11px 33px 15px 33px;
         letter-spacing: 0.7px;
         box-shadow: 0 -2px #adedbb inset;
@@ -516,5 +517,58 @@ body {
         margin: 84px auto 0;
         padding: 13px 0;
         max-width: 265px;
+    }
+}
+.block-letter {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        flex-basis: 49%;
+    }
+    &__title {
+        font-size: 48px;
+        margin-top: 8px;
+        margin-bottom: 23px;
+        letter-spacing: 1.9px;
+    }
+    &__text {
+        font-size: 15px;
+        font-family: 'Open Sans', serif;
+        letter-spacing: 0.75px;
+    }
+    &__input {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $bg-dark-color;
+        border: none;
+        color: $gray-color;
+        padding: 15px 27px;
+        border-radius: 3px;
+        letter-spacing: 0.6px;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            font-family: 'Open Sans', serif;
+            color: $gray-color;
+        }
+    }
+    &__btn {
+        background: linear-gradient(to top left, #65e49c, #65e4af);
+        border: none;
+        color: $light-color;
+        text-decoration: none;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 21px;
+        padding: 11px 0 15px 0;
+        letter-spacing: 0.7px;
+        box-shadow: 0 -2px #adedbb inset;
+        display: block;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
     }
 }
